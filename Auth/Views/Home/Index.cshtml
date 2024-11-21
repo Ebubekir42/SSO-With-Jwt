@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form method="post" action="Account/Login">
+        <input type="hidden" name="username" value="admin" />    
+        <input type="hidden" name="password" value="123456" />
+        <button type="submit" value="Login"></button>
+    </form>
+    <form method="post" action="Account/Logoff">
+        
+        <button type="submit" value="Logout"></button>
+    </form>
+    <form method="post" action="Account/GetUser">
+
+        <button type="submit" value="GetUser"></button>
+    </form>
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
